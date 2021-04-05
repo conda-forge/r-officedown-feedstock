@@ -14,8 +14,8 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  skip: true  # [r_base == "3.5.1"]
   number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -25,10 +25,9 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-bookdown >=0.13
     - r-knitr
     - r-memoise
-    - r-officer >=0.3.11
+    - r-officer >=0.3.18
     - r-rlang
     - r-rmarkdown
     - r-rvg >=0.2.2
@@ -37,10 +36,9 @@ requirements:
     - r-yaml
   run:
     - r-base
-    - r-bookdown >=0.13
     - r-knitr
     - r-memoise
-    - r-officer >=0.3.11
+    - r-officer >=0.3.18
     - r-rlang
     - r-rmarkdown
     - r-rvg >=0.2.2

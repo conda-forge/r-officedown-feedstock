@@ -1,4 +1,4 @@
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/officedown_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/officedown/officedown_{{ version }}.tar.gz
-  sha256: 9cecfc3466e0606ac3d48c8ae66d581cf8f36294474bb0208bcb170c4518e3f3
+  sha256: 56fca297ae8d4902e175e1993ccc25c87c3d78b06935dda7826c98f7db695f40
 
 build:
   merge_build_host: true  # [win]

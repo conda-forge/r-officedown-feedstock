@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/officedown_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/officedown/officedown_{{ version }}.tar.gz
-  sha256: e1e1322a9c2879c6c41f346292cd845cb14ec44aa6707e620f4c90165b22cba5
+  sha256: 657506465b047d782c88e60d0104dbcf5b53e53375ae408350292f2a358e9989
 
 build:
   number: 0
